@@ -13,8 +13,8 @@
 ### 파일 구조
 
 - header.php
-- layout-has-nav.php : 네비게이션 있는 버전
-- layout-no-nav.php : 네비게이션 없는 페이지
+- layout.php :  상단로고 포함 레이아웃
+- no_header_layout.php :  상단로고 없는 레이아웃
 - footer.php
 - components : 콘텐츠영역의 파일들. 각 레이아웃 페이지에서 include를 통해 불러옴.
 - public
@@ -33,7 +33,5 @@
     .normal - 배경색 있는 버튼 default 검색정( 색상코드 : #333333), .gray 클래스(회색 버튼, 색상코드: #818286) 제공
 
 #### 레이아웃 구성
-      - 회원가입, 로그인 등의 네이게이션 없는 레이아웃 : 파일명 - layout.php
-      - 네비게이션 있는 레이아웃 : 파일명 - layout-has-nav.php
-      - 스크롤 시 footer scroll형 레이아웃: 파일명 layout.php 해당 레이아웃 사용 컴포넌트 파일 내부 주석 처리하여 기재함
-      - 팝업창 확인은 popup_layout.php 파일에서 확인
+      - 로그인 : 파일명 - layout.php
+      - 로보알라설정관리 : 파일명 - no_header_layout.php
