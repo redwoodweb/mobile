@@ -1,97 +1,10 @@
 $sidemenuWidth : 250px; // 네비게이션 없는 레이아웃 사이드 메뉴 너비
 $vhPpadding: 120px; // 네비게이션 없는 레이아웃 100vh 사용 시 상하 여백값
-///dashboard
-.dashboard{
-    position: relative;
-    height: calc( 100vh - 200px );
-    min-height: 950px;
-    min-width: calc( 1260px - #{$sidemenuWidth} - 80px );
-    & > .items{
-        position: absolute;
-        display: inline-block;
-        width: 100%;
-        height: 50%;
-        padding-top: 50px;
-        left: 0;
-        overflow: auto;
-        text-align: center;
-        &:first-child{
-         border-bottom: 1px solid #eaeaea;
-        }
-        &:last-child{
-          top: 50%;
-        }
-        .title{
-          top: 26px;
-          line-height: 24px;
-        }
-    }
-    .items_2{
-        position: absolute;
-        width: 50%;
-        padding-top: 90px;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        text-align: center;
-        &:last-child{
-          left: 50%;
-        }
-        .title{
-          top: 66px;
-          line-height: 24px;
-        }
-    }
-    .title{
-      position:absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      text-align: center;
-      font-size: $size6;
-    }
-}
-///테이블 컨텐츠 레이아웃
-.ct_inner{
-  .addbtn_input_group_multiline,.input_group_wrap{
-    & + .table_ctn{
-      margin-top: 30px;
-    }
-  }
-  .table_ctn{
-      //min-height: 300px;
-  }
-  .title{
-    font-size: $size6;
-    color: $text_color;
-    margin-bottom: 15px;
-  }
-  .sub_title{
-    font-size: $size6;
-    color: $title_color;
-    margin-top: 40px;
-  }
-}
 
 
 /////////// Container
-.page_container {
-    width:100%;
-    height:100%;
-    position: relative;
-    .content {
-        width:100%;
-        height: 100%;
-        display:flex;
-        padding: 60px 0;
-    }
-    .content_inner {
-        padding: 40px;
-        width: calc( 100% - #{$sidemenuWidth} );
-    }
-}
 
-body.mobile.common {
+body.common {
   header {
     display: flex;
     justify-content: center;
@@ -104,7 +17,7 @@ body.mobile.common {
       width: 100%;
       margin:0 auto;
       height: auto;
-      min-height: calc(100vh - #{$vhPpadding});
+      min-height: 100vh;
       .content_inner {
         padding: 0;
         width: 100%;
@@ -172,85 +85,6 @@ body.no-nav {
     }
 }
 
-// 네비게이션
-body.has-nav {
-    overflow-y: hidden;
-    .content_inner {
-        padding: 40px;
-        width: calc( 100% - #{$sidemenuWidth});
-        overflow: auto;
-    }
-    .main_header {
-        background-color: #333333;
-        padding:0 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width:100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        .logo {
-            padding: 15px 0;
-            img {
-                max-width: 65%;
-            }
-        }
-    }
-
-    .navigation {
-        ul {
-            display:flex;
-            flex-direction:row;
-            justify-content: center;
-
-            a {
-                font-size: $size4;
-                color: #999;
-                padding:20px;
-                display: flex;
-                justify-content:center;
-                align-items: center;
-                position: relative;
-                line-height: 1.2em;
-                transition:all 0.3s;
-                &:after {
-                    content:'';
-                    border-right: 1px solid #555;
-                    height: 15px;
-                    position: absolute;
-                    right: 0px;
-                    top: auto;
-                    width: 1px;
-                    display: flex;
-                }
-            }
-
-            li.active a, a:hover {
-                color: #fff;
-            }
-
-            li:last-child a:after {
-                content:none;
-            }
-        }
-    }
-
-    .side_widget {
-        .profile {
-            display: flex;
-            .photo {
-                margin-right:10px;
-            }
-            .name {
-                color: #fff;
-                display: flex;
-                align-items: center;
-                font-size: $size3;
-            }
-        }
-    }
-}
 
 /////////// Footer
 

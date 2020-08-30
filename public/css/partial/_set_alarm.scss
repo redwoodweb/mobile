@@ -1,0 +1,150 @@
+.set_alarm_wrapper {
+  .inner{
+    .title{
+      padding: 30px 5%;
+      h1{ font-size: 24px; }
+    }
+   #user {
+     padding: 0 5%;
+     overflow: hidden;
+     .user_img {
+       width: 50px;
+       height: 50px;
+       border-radius: 50px;
+       overflow: hidden;
+       float: left;
+     }
+     .user_info {
+       float: left;
+       padding-left: 10px;
+       h3{ font-size: 18px; }
+       .inner {
+         overflow: hidden;
+         margin-top: 5px;
+         .name,.phone_number{
+           color: #666666;
+         }
+         .phone_number{
+           padding-left: 10px;
+         }
+       }
+       .inner *{
+         float: left;
+       }
+     }
+   }
+   .edit-bar{
+     position: relative;
+     margin-top: 30px;
+     padding: 15px 5%;
+     background: #eeeeee;
+     overflow: hidden;
+     button{
+       font-size: 18px;
+       color: $title_color;
+       font-weight: 500;
+       float: left;
+       &.add {
+           position: absolute;
+           width: 26px;
+           height: 26px;
+           right: 10%;
+           top: 50%;
+           transform: translateY(-50%);
+          &:before,&:after{
+            content:'';
+            position: absolute;
+            background: #818286;
+          }
+          &:before{
+            width: 4px;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+          }
+          &:after{
+            width: 100%;
+            height: 4px;
+            left: 0;
+            transform: translateY(-50%);
+          }
+       }
+     }
+   }
+   .set_alarm{
+     .items > *{
+       float: left;
+     }
+     input[type=checkbox]:checked ~ .items{
+       .alarm_set_info{
+         padding-left: 40px;
+         transition: 1s;
+         .delete_btn{
+           z-index: 0;
+           opacity:1;
+           transition: .2s .5s;
+         }
+       }
+     }
+     .items{
+       position: relative;
+       overflow: hidden;
+       padding: 15px 5%;
+       border-bottom: 1px solid #dddddd;
+       box-sizing: border-box;
+       &:last-child {
+         border-bottom: none;
+       }
+       .devied_line{
+        position: relative;
+        margin: 0 10px;
+        display: inline-block;
+        width: 1px;
+        background: #999999;
+        top: 2px;
+        height: 12px;
+       }
+       .alarm_set_info{
+         position: relative;
+         transition: 1s;
+        .delete_btn{
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background: url('../img/delete_btn@3x.png') no-repeat center center;
+          background-size: contain;
+          transform: translateY(-50%);
+          left:0;
+          top: 50%;
+          z-index: -1;
+          opacity:0;
+          transition: .2s;
+        }
+        .time{ font-size: 24px; }
+        .subtext{ font-size: 16px; }
+        .detail_info{
+          margin-top: 10px;
+          font-size: 12px;
+          color: #999999;
+          & > *{
+            float: left;
+          }
+        }
+       }
+       .alarm_set_button{
+         float: right;
+         .switch{
+          position: absolute;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+          right: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+         }
+       }
+     }
+   }
+  }
+}
