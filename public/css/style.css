@@ -618,7 +618,7 @@ body.has-nav .content .side_navi ul li.active a {
 .login_wrapper .title h1 {
   font-size: 24px;
   font-weight: 300;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   line-height: 1.2em;
 }
 
@@ -1251,47 +1251,6 @@ a.gbtn {
 
 .custom-select .select-items div:hover, .custom-select .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.sign_up .button_group {
-  margin-top: 40px;
-}
-
-.sign_up .table_a th button, .sign_up .table_a th a, .sign_up .table_a th i, .sign_up .table_a th .custom-select, .sign_up .table_a th label, .sign_up .table_a th .txt, .sign_up .table_a th input, .sign_up .table_a td button, .sign_up .table_a td a, .sign_up .table_a td i, .sign_up .table_a td .custom-select, .sign_up .table_a td label, .sign_up .table_a td .txt, .sign_up .table_a td input {
-  float: left;
-  margin-left: 5px;
-}
-
-.sign_up .table_a th label, .sign_up .table_a td label {
-  margin: 5px 0 0 5px;
-}
-
-.sign_up .table_a th .txt, .sign_up .table_a td .txt {
-  display: inline-block;
-  font-size: 14px;
-  color: #999999;
-  margin: 5px 0 0 5px;
-}
-
-.sign_up .table_a th input:first-child, .sign_up .table_a td input:first-child {
-  margin-left: 0px;
-}
-
-.sign_up .table_a th input[type='checkbox'] + label, .sign_up .table_a td input[type='checkbox'] + label {
-  margin-left: 12px;
-}
-
-.sign_up .table_a th input + i, .sign_up .table_a td input + i {
-  float: left;
-  margin-top: 5px;
-}
-
-.sign_up .table_a th input + i + input, .sign_up .table_a td input + i + input {
-  margin-left: 5px;
-}
-
-.sign_up .table_a td {
-  font-weight: 500;
 }
 
 .cp_sign_up .button_group {
